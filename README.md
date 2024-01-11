@@ -1,4 +1,4 @@
-当用GO写JAVA反序列化EXP的时候, 每次都要重写生成,调用不方便时, 可以使用本库
+![](https://socialify.git.ci/qi4L/GlangYsoserial.java/image?description=1&font=KoHo&forks=1&issues=1&language=1&logo=https%3A%2F%2Fs11.ax1x.com%2F2024%2F01%2F11%2FpF97rkT.png&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto)
 
 使用方法示例
 ```go
